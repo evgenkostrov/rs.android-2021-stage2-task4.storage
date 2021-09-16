@@ -22,10 +22,10 @@ abstract class AnimalDatabase : RoomDatabase() {
             super.onCreate(db)
             val dao = database.get().animalDao()
             applicationScope.launch {
-                dao.insertAnimal(Animal(name = "Sosiska", age = 1, breed = "cat"))
-                dao.insertAnimal(Animal(name = "Sos", age = 2, breed = "cat"))
-                dao.insertAnimal(Animal(name = "Ka", age = 3, breed = "bat"))
-                dao.insertAnimal(Animal(name = "a", age = 2, breed = "bat"))
+                dao.insertAnimal(Animal(name = "Sergey", age = 6, breed = "cat"))
+                dao.insertAnimal(Animal(name = "Sosiska", age = 2, breed = "cat"))
+                dao.insertAnimal(Animal(name = "Sharik", age = 10, breed = "dog"))
+
             }
         }
     }
