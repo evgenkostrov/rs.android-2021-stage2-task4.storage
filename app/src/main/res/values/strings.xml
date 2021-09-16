@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">storage</string>
+    <string name="add_animal">Add Animal</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Sorting</string>
+    <string name="sync_header">Switch Database</string>
+
+    <!-- Messages Preferences -->
+
+    <string name="sort_by_title">Sort by</string>
+
+    <!-- Sync Preferences -->
+    <string name="database_title">Room>>>Cursor</string>
+
+</resources>
