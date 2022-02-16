@@ -56,13 +56,16 @@ class AddFragment : Fragment(R.layout.fragment_add) {
                     is AddViewModel.AddUpdateAnimalEvent.NavigateBackWithResult -> {
 
                         setFragmentResult(
-                            "add_update_request",
-                            bundleOf("add_update_request" to event.result)
+                            REQUEST_KEY,
+                            bundleOf(REQUEST_KEY to event.result)
                         )
                         findNavController().popBackStack()
                     }
                 }.exhaustive
             }
         }
+    }
+    companion object{
+        private const val REQUEST_KEY = "add_update_request"
     }
 }
