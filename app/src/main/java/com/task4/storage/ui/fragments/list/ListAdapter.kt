@@ -21,6 +21,9 @@ class ListAnimalAdapter(private val listener: OnItemClickListener) :
     override fun onBindViewHolder(holder: AnimalsViewHolder, position: Int) {
         val currentItem = getItem(position)
         holder.bind(currentItem)
+        ItemAnimation.animateLeftRight(holder.itemView, position)
+
+
     }
 
     inner class AnimalsViewHolder(private val binding: ItemRowBinding) :
